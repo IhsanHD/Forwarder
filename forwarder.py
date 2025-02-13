@@ -7,7 +7,7 @@ import json
 
 # Ganti dengan token bot Telegram Anda
 BOT_TOKEN = "7013294958:AAGFR7tjZgsyRjfS5kRgy8cd-HsH5qCZWsI"
-GITHUB_REPO_PATH = "C:/Project/Forwarder/repo/ConfigOC"  # Path ke repo lokal
+GITHUB_REPO_PATH = "/root/python/Forwarder/repo/ConfigOC/"  # Path ke repo lokal
 GITHUB_COMMIT_MESSAGE = "Auto update vmess output"
 
 bot = telebot.TeleBot(BOT_TOKEN)
