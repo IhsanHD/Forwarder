@@ -1,0 +1,33 @@
+proxies:
+- name: Vmess WS (SNI) 1
+  type: vmess
+  server: 104.17.3.81
+  port: 443
+  uuid: 6aad74e7-0180-4775-b2d3-2992f2d4c756
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.round.web.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: 2.round.web.id
+- name: Vmess WS (SNI) 2
+  type: vmess
+  server: 2.round.web.id
+  port: 443
+  uuid: 6aad74e7-0180-4775-b2d3-2992f2d4c756
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: meetings.googleapis.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: meetings.googleapis.com
