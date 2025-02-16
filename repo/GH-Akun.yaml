@@ -31,3 +31,18 @@ proxies:
     path: /vmess
     headers:
       Host: meetings.googleapis.com
+- name: Free
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 3979ff5d-9de9-44d6-aae2-611a90e591a6
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 2f2db5f9.vless-66v.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 2f2db5f9.vless-66v.pages.dev
+    udp: true
